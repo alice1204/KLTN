@@ -1,0 +1,6 @@
+fastapi[standard]
+PyYAML
+python-dotenv
+google-genai
+pytest
+httpx
