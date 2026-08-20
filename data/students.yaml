@@ -3,10 +3,18 @@ students:
     name: "Nguyễn Văn A"
     major: "Khoa học dữ liệu và Trí tuệ nhân tạo"
     current_semester: 4
-
     completed:
       - TH01001
       - TH01002
-
     failed:
       - TH01007
+
+  "671235":
+    name: "Trần Văn B"
+    major: "Khoa học dữ liệu và Trí tuệ nhân tạo"
+    current_semester: 4
+    completed:
+      - TH01001
+      - TH01002
+      - TH01007
+    failed: []

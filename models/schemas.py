@@ -1,9 +1,14 @@
-from pydantic import BaseModel, Field
+from pydantic import (
+    BaseModel,
+    ConfigDict,
+    Field,
+)
 
 
 class ScheduleRequest(BaseModel):
-
-    student_id: str
+    model_config = ConfigDict(
+        extra="forbid"
+    )
 
     target_credits: int = Field(
         default=18,
@@ -12,6 +17,7 @@ class ScheduleRequest(BaseModel):
     )
 
     allow_early: bool = True
+
 
 class ExplainScheduleRequest(BaseModel):
     schedule_result: dict
